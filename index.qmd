@@ -1,0 +1,7 @@
+---
+title: "Kaggle Playground Submissions"
+---
+
+This repository contains notebooks of my submissions for Kaggle Playground competitions. The Kaggle Playgrounds often serve as excellent learning grounds for data science enthusiasts to explore various datasets, practice machine learning, and compete with peers.
+
+Click on the "Notebooks" section in the sidebar to check them out.

@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  favicon: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png"
+  page-navigation: true
+  title: "Kaggle Notebooks"
+  description: "My Kaggle Notebook Submissions"
+  site-url: "https://bsc-iitm.github.io/ML_Handbook/"
+
+  repo-url: https://github.com/SherryS997/kaggle-notebook
+  repo-actions: [edit, issue]
+
+  open-graph: true
+
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    background: "#D9E3E4"
+
+  sidebar:
+    background: "#D9E3E4"
+    logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/SherryS997/kaggle-notebook
+        text: "GitHub Repo"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Home"
+        contents:
+          - href: index.qmd
+            text: About
+      - text: "---"
+      - section: "Notebooks"
+        contents:
+          - href: pages/a-study-on-the-impact-of-feature-scaling.ipynb
+            text: Feature Scaling Impact
+          - href: pages/pg-s3e26.ipynb
+            text: playground-s3e26
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+freeze: auto
+
+editor: visual
